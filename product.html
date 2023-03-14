@@ -1,0 +1,46 @@
+<!--
+Etienne Collin | Matricule: 20237904
+Mohamed Labsari | Matricule: 20249734
+Justin Villeneuve | Matricule: 20132792
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<title>OnlineShop - Produit</title>
+		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+		<script type="text/javascript" src="assets/js/jquery-3.6.1.min.js"></script>
+		<script type="text/javascript" src="assets/scripts/main.js"></script>
+		<script type="text/javascript" src="assets/scripts/productPage.js"></script>
+	</head>
+	<body>
+		<header id="header"></header>
+		<main id="main">
+			<h1 id="productName"></h1>
+			<div class="flex-horizontal">
+				<div id="productImage"></div>
+				<section>
+					<section id="productInfo">
+						<h2>Description</h2>
+						<p id="productDescription"></p>
+						<h2>Caractéristiques</h2>
+						<ul id="productCharacteristics"></ul>
+					</section>
+					<div class="flex-horizontal">
+						<p>Prix: <b id="productPrice"></b></p>
+						<form class="qty" method="GET">
+							<label for="qty">Quantité:</label>
+							<input type="number" class="form-input" name="Quantity" id="qty" value="1" min="1" />
+							<button class="button" type="button" value="Submit" onclick="addToCart(this.form)">
+								<i class="fa fa-cart-plus"></i>Ajouter
+							</button>
+						</form>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer id="footer"></footer>
+	</body>
+</html>

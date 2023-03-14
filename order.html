@@ -1,0 +1,74 @@
+<!--
+Etienne Collin | Matricule: 20237904
+Mohamed Labsari | Matricule: 20249734
+Justin Villeneuve | Matricule: 20132792
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<title>OnlineShop - Commande</title>
+		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+		<script type="text/javascript" src="assets/js/jquery-3.6.1.min.js"></script>
+		<script type="text/javascript" src="assets/scripts/main.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="assets/js/additional-methods.min.js"></script>
+		<script type="text/javascript" src="assets/scripts/order.js"></script>
+	</head>
+	<body>
+		<header id="header"></header>
+		<main>
+			<h1>Commande</h1>
+			<form id="orderForm">
+				<h3>Contact</h3>
+				<section>
+					<div>
+						<label for="firstname">Prénom</label>
+						<input type="text" id="firstname" name="firstname" placeholder="Prénom" minlength="2" required />
+					</div>
+					<div>
+						<label for="lastname">Nom</label>
+						<input type="text" id="lastname" name="lastname" placeholder="Nom" minlength="2" required />
+					</div>
+					<div>
+						<label for="email">Adresse courriel</label>
+						<input type="email" id="email" name="email" placeholder="Adresse courriel" required />
+					</div>
+					<div>
+						<label for="phone">Numéro de téléphone</label>
+						<input
+							type="tel"
+							id="phone"
+                            name="phone"
+							pattern="\+?(\d{1})?[- ]?\(?\d{3}\)?[- ]?\d{3}[- ]?\d{4}"
+							placeholder="###-###-####"
+							required
+						/>
+					</div>
+				</section>
+				<h3>Paiement</h3>
+				<section>
+					<div>
+						<label for="creditcard">Numéro de carte de crédit</label>
+						<input
+							type="text"
+							id="creditcard"
+                            name="creditcard"
+							pattern="\d{4}[ ]?\d{4}[ ]?\d{4}[ ]?\d{4}"
+							placeholder="•••• •••• •••• ••••"
+							required
+						/>
+					</div>
+					<div>
+						<label for="creditcardexpiry">Expiration</label>
+						<input type="text" id="creditcardexpiry" name="creditcardexpiry" placeholder="mm/aa" required />
+					</div>
+				</section>
+				<button class="button float-right" type="submit" value="Submit">Payer »</button>
+			</form>
+		</main>
+		<footer id="footer"></footer>
+	</body>
+</html>

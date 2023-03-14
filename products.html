@@ -1,0 +1,50 @@
+<!--
+Etienne Collin | Matricule: 20237904
+Mohamed Labsari | Matricule: 20249734
+Justin Villeneuve | Matricule: 20132792
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<title>OnlineShop - Produits</title>
+		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+		<script type="text/javascript" src="assets/js/jquery-3.6.1.min.js"></script>
+		<script type="text/javascript" src="assets/scripts/main.js"></script>
+		<script type="text/javascript" src="assets/scripts/loadProductList.js"></script>
+	</head>
+	<body>
+		<header id="header"></header>
+		<main class="sidebar-and-main">
+			<!-- Barre Latérale -->
+			<section id="sidebar">
+				<h3>Catégories</h3>
+				<div id="productcategories">
+					<button id="cameras">Appareils photo</button>
+					<button id="consoles">Consoles</button>
+					<button id="screens">Écrans</button>
+					<button id="computers">Ordinateurs</button>
+					<button id="all">Tous les produits</button>
+				</div>
+				<h3>Classement</h3>
+				<div id="productcriteria">
+					<button id="priceAsc">Prix (bas-haut)</button>
+					<button id="priceDesc">Prix (haut-bas)</button>
+					<button id="nameAsc">Nom (A-Z)</button>
+					<button id="nameDesc">Nom (Z-A)</button>
+				</div>
+			</section>
+			<!-- Main content -->
+			<section>
+				<div class="flex-horizontal">
+					<h1>Produits</h1>
+					<h3 id="totalProducts" class="align-right"></h3>
+				</div>
+				<div id="productlist"></div>
+			</section>
+		</main>
+		<footer id="footer"></footer>
+	</body>
+</html>

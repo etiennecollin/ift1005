@@ -1,0 +1,44 @@
+<!--
+Etienne Collin | Matricule: 20237904
+Mohamed Labsari | Matricule: 20249734
+Justin Villeneuve | Matricule: 20132792
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<title>OnlineShop - Panier</title>
+		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+		<script type="text/javascript" src="assets/js/jquery-3.6.1.min.js"></script>
+		<script type="text/javascript" src="assets/scripts/main.js"></script>
+		<script type="text/javascript" src="assets/scripts/cart.js"></script>
+	</head>
+
+	<body>
+		<header id="header"></header>
+		<main id="main">
+			<h1>Panier</h1>
+			<section id="cartSection">
+				<table id="cart">
+					<thead>
+						<th></th>
+						<th>Produit</th>
+						<th>Prix unitaire</th>
+						<th>Quantité</th>
+						<th>Prix</th>
+					</thead>
+					<tbody id="cartBody"></tbody>
+				</table>
+				<p>Total: <b id="cartTotal"></b></p>
+				<br />
+				<div id="cart-action-buttons">
+					<a class="button remove-all-items-button">Vider le panier</a>
+					<a class="button" href="order.html">Commander »</a>
+				</div>
+			</section>
+		</main>
+		<footer id="footer"></footer>
+	</body>
+</html>
